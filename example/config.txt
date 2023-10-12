@@ -1,0 +1,2 @@
+Prefix plugins/ImaGES/example/
+Plugin ImaGES inputfile 9var outputfile output.png
