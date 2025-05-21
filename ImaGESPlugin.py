@@ -70,6 +70,8 @@ class ImaGESPlugin:
   #from IPython.display import SVG
   dot_str = pc.tetradGraphToDot(tetrad.getTetradGraph())
   graphs = pydot.graph_from_dot_data(dot_str)
+  outtxt = open(outputfile+".txt", 'w')
+  outtxt.write(dot_str)
   graphs[0].write_png(outputfile)
   #svg_str = graphs[0].create_svg()
   #SVG(svg_str)
